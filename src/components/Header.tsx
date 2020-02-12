@@ -16,12 +16,12 @@ const styles = StyleSheet.create({
   container: {
     borderBottomWidth: 2,
     borderBottomColor: '#ccc',
-    marginTop: 20,
+    marginTop: 26,
     width: Dimensions.get('window').width,
     flexDirection: 'row',
     paddingLeft: 20,
     paddingVertical: 5,
-    backgroundColor: '#eee',
+    backgroundColor: '#ccc',
   },
   logo: {
     width: 40,

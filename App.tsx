@@ -1,12 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Header from './src/components/Header'
+import HeroImage from './src/components/HeroImage'
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Header />
-      <Text style={styles.x}>Some content</Text>
+      <HeroImage />
+      <View style={styles.x}>
+      </View>
     </View>
   );
 }
