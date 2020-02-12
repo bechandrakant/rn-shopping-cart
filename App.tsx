@@ -1,27 +1,29 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import Header from './src/components/Header'
 import HeroImage from './src/components/HeroImage'
+import BrowseProducts from './src/components/BrowseProducts';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <Header />
       <HeroImage />
-      <View style={styles.x}>
-      </View>
-    </View>
+      <Text style={styles.text}> Browse Products </Text>
+      <BrowseProducts />
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#cfc',
   },
-  x: {
-    flex: 1,
+  text: {
+    textAlign: 'center',
+    paddingTop: 5,
+    fontSize: 16,
+    fontWeight: 'bold',
   }
 });
